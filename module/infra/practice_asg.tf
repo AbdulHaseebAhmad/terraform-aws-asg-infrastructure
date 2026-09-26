@@ -1,5 +1,5 @@
 resource "aws_autoscaling_group" "practice_asg" {
-  name                      = "${var.environment_name}-practice-sg"
+  name                      = "${var.environment_name}-practice-asg"
   max_size                  = var.asg_config.max_size
   min_size                  = var.asg_config.min_size
   health_check_grace_period = var.asg_config.health_check_grace_period
